@@ -23,6 +23,8 @@ install.packages("mice")
 # to save plots in pdf or PNG
 install.packages("patchwork")
 install.packages("gridExtra")
+#install.packages("reshape2")
+library(reshape2)
 
 library(data.table)
 library(ggplot2)
@@ -231,8 +233,7 @@ summary(house_data_clean$SalePrice)
 
 
 #====================================================]
-#install.packages("reshape2")
-library(reshape2)
+
 # 1. Compute correlation matrix (numeric variables only)
 # 1. Separate target and predictors SAFELY
 target <- house_data_clean$SalePrice
