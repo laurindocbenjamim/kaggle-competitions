@@ -23,7 +23,11 @@ install.packages("mice")
 # to save plots in pdf or PNG
 install.packages("patchwork")
 install.packages("gridExtra")
+install.packages("dplyr")
 #install.packages("reshape2")
+
+
+library(dplyr)
 library(reshape2)
 
 library(data.table)
@@ -150,8 +154,7 @@ write.csv(data_cleaned_cat_drop, "train_processed.csv", row.names = FALSE)
 
 ###
 
-# Load required libraries
-library(e1071)
+
 
 # Load data
 #data <- fread("train_processed.csv", data.table = FALSE)
@@ -285,8 +288,8 @@ analysis_data_w_n_zero <- analysis_data[, !constant_cols]
 
 print(analysis_data_w_n_zero)
 
-if(any(final_check == 0)) {
-  warning("Constant column still present: ", names(which(final_check == 0)))
+if(any(analysis_data_w_n_zero == 0)) {
+  warning("Constant column still present: ", names(which(analysis_data_w_n_zero == 0)))
 }
 
 # 7. Compute correlations (now safe)
