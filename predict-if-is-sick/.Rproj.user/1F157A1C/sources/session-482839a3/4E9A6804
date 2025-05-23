@@ -1,0 +1,26 @@
+{
+    "id": "4E9A6804",
+    "path": "D:/RProject/predict-diabetes/predict-diabetes-models-vizuali-r.R",
+    "project_path": "predict-diabetes/predict-diabetes-models-vizuali-r.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1747295352376.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "8,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1747267986,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1747267986,
+    "read_only": false,
+    "read_only_alternatives": []
+}
